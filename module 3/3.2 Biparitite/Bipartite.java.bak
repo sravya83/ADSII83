@@ -47,7 +47,7 @@ public class Bipartite {
 		// TODO Auto-generated method stub
 	if(isBipartite=true)
 	{
-		System.out.println("Graph is bipartite");
+		System.out.println("exists");
 	}
 	else
 		System.out.println("not");
