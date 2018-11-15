@@ -36,7 +36,9 @@ public class Bipartite {
                     cycle.push(x);
                 }
                 cycle.push(w);           
-                System.out.println("jhfciu");}
+                System.out.println("Graph is not bipartite");
+				system.Exit(0);
+				}
         }
     }
     public boolean isBipartite() {
@@ -47,7 +49,7 @@ public class Bipartite {
 		// TODO Auto-generated method stub
 	if(isBipartite=true)
 	{
-		System.out.println("exists");
+		System.out.println("Graph is bipartite");
 	}
 	else
 		System.out.println("not");

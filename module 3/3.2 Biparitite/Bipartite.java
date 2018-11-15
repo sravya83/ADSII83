@@ -36,7 +36,9 @@ public class Bipartite {
                     cycle.push(x);
                 }
                 cycle.push(w);           
-                System.out.println("jhfciu");}
+                System.out.println("Graph is not bipartite");
+				System.exit(0);
+				}
         }
     }
     public boolean isBipartite() {
