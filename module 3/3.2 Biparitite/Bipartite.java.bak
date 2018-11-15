@@ -51,4 +51,4 @@ public class Bipartite {
 		System.out.println("Graph is bipartite");
 	
 	
-}
+}}
