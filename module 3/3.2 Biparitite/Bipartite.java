@@ -28,30 +28,27 @@ public class Bipartite {
             } 
 
             
-            else if (color[w] == color[v]) {
+            /*else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
                 cycle.push(w);  
                 for (int x = v; x != w;) {
                     cycle.push(x);
                 }
-                cycle.push(w);           
+                cycle.push(w);   */        
                 System.out.println("Graph is not bipartite");
 				System.exit(0);
 				}
         }
-    }
+    
     public boolean isBipartite() {
         return isBipartite;
     }
 
 	public void display() {
 		// TODO Auto-generated method stub
-	if(isBipartite=true)
-	{
+	
 		System.out.println("Graph is bipartite");
-	}
-	else
-		System.out.println("not");
-	}
-}
+	
+	
+}}
