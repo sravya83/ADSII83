@@ -35,10 +35,12 @@ public class Bipartite {
                 for (int x = v; x != w;) {
                     cycle.push(x);
                 }
-                cycle.push(w);   */        
+                cycle.push(w);   */  
+				else
+			{
                 System.out.println("Graph is not bipartite");
 				System.exit(0);
-				}
+			}	}
         }
     
     public boolean isBipartite() {

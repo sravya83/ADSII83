@@ -36,7 +36,7 @@ public class Bipartite {
                     cycle.push(x);
                 }
                 cycle.push(w);   */  
-				else
+				else if(color[w]==color[v])
 			{
                 System.out.println("Graph is not bipartite");
 				System.exit(0);
