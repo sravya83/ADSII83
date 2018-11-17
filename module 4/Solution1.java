@@ -14,7 +14,7 @@ class Matrix1
 	 int [] in;
 		ArrayList<Integer> arr=new ArrayList<Integer>();
 	ArrayList<Integer> topsort=new ArrayList<Integer>();
-	 static int j1=0;
+	 static int x=0;
 	 static int e;
 	 Queue<Integer>q=new Queue<Integer>();
 	 
@@ -27,7 +27,7 @@ class Matrix1
 		 in=new int[v];
 		
 		
-			adj = new int[v ][v];
+			adj = new int[v][v];
 			for(int i = 0;i<v;i++)
 			{
 				for(int j = 0;j<v;j++)
@@ -70,7 +70,7 @@ class Matrix1
 	     {
 			k=q.dequeue();
 			topsort.add(k);
-			j1++;
+			x++;
 			for (i=0;i<e;i++) 
 	                 {
 				if(adj[k][i]==1) 
@@ -87,7 +87,7 @@ class Matrix1
 public	int indegree(int node) 
     {
 		int i,deg = 0;
-		for (i = 0;i <a.length;i++)
+		for (i = 0;i <adj.length;i++)
 		   if(adj[i][node] == 1)
 		    deg++;
 		return deg;
@@ -99,11 +99,11 @@ public	int indegree(int node)
 public static void main(String args[]) throws IOException, InterruptedException
 {Scanner s=new Scanner(System.in);
 
-	int ab[];
+	int a[];
 	int n=s.nextInt();
 	
 	int m=s.nextInt();
-	Matrix1 m1=new Matrix1(n+1);
+	Matrix1 ma=new Matrix1(n+1);
 	for(int i = 0;i<m;i++)
 	{
 	
@@ -114,24 +114,24 @@ public static void main(String args[]) throws IOException, InterruptedException
 	{
 		
 		a[j]=s.nextInt();
-		if(!m1.arr.contains(n1))
+		if(!ma.arr.contains(n1))
 		{
-			m1.arr.add(n1);
+			ma.arr.add(n1);
 			
 		}
-		if(!m1.arr.contains(a[j]))
+		if(!ma.arr.contains(a[j]))
 		{
-			m1.arr.add(a[j]);
+			ma.arr.add(a[j]);
 		}
-		m1.insert(a[j], n1);
+		ma.insert(a[j], n1);
 	}
 	
 		
 	
 	//m1.insert(n1, n2);
 	}
-	m1.topologicalsort();
-	m1.display();
+	ma.topologicalsort();
+	ma.display();
 }
 	 
 }
